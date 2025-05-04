@@ -1,14 +1,5 @@
 // app/page.tsx
 "use client";
-import GerFlag from "@/public/germanyflag.png";
-import HitImage from "@/public/Hit.png";
-import KingImage from "@/public/king.png";
-import RevoImage from "@/public/revolu.png";
-import CasaImage from "@/public/casani.png";
-import SeotImage from "@/public/seot.png";
-import PunterImage from "@/public/punter.png";
-import VulkImage from "@/public/vulk.png";
-import LuckyImgae from "@/public/lucky.png";
 import React from "react";
 import Image from "next/image";
 import { Star } from "lucide-react";
@@ -34,7 +25,7 @@ export default function Home() {
         {/* Casino List */}
         <div className="flex-1">
           <div className="bg-blue-100 p-7 flex-row rounded-md font-semibold mb-4 flex gap-2 justify-center">
-            <Image className="w-8 h-5" alt="Germany Flag" src={GerFlag} />
+            <Image className="w-8 h-5" alt="Germany Flag" src="/germanyflag.png" width={32} height={20} />
             🇩🇪 Beste deutsche Casinoseiten 2025
           </div>
 
@@ -45,7 +36,7 @@ export default function Home() {
               setiings: "96.00%  1 - 5 Tage  7.500+",
               bonus: "800€*",
               rating: "5/5",
-              image: HitImage,
+              image: "/Hit.png",
               tag: "Regelmäßige Turniere",
             },
             {
@@ -53,16 +44,15 @@ export default function Home() {
               setiings: "96.00%  1 - 5 Tage  8.400+",
               bonus: "500€*",
               rating: "4.9/5",
-              image: KingImage,
+              image: "/king.png",
               tag: "Top Spielauswahl",
             },
             {
               rank: 3,
-
               setiings: "96.00%  1 - 5 Tage  5.000+",
               bonus: "1.500€*",
               rating: "4.8/5",
-              image: RevoImage,
+              image: "/revolu.png",
               tag: "Exklusiver 150% Bonus",
             },
             {
@@ -70,7 +60,7 @@ export default function Home() {
               setiings: "98.00%  1 - 5 Tage  10.000+",
               bonus: "2.000€*",
               rating: "4.8/5",
-              image: CasaImage,
+              image: "/casani.png",
               tag: "Top Spielauswahl",
             },
             {
@@ -78,7 +68,7 @@ export default function Home() {
               setiings: "96.00%  1 - 5 Tage  7.900+",
               bonus: "1.000€*",
               rating: "4.7/5",
-              image: SeotImage,
+              image: "/seot.png",
               tag: "Attraktive Aktionen",
             },
             {
@@ -86,25 +76,23 @@ export default function Home() {
               setiings: "96.00%  1 - 5 Tage  12.000+",
               bonus: "500€*",
               rating: "4.7/5",
-              image: PunterImage,
+              image: "/punter.png",
               tag: "Mehr als 12.000 Spiele aller Art",
             },
             {
               rank: 7,
-
               setiings: "97.00%  1 - 4 Tage  3.100+",
               bonus: "1.000€*",
               rating: "4.6/5",
-              image: VulkImage,
+              image: "/vulk.png",
               tag: "Top Treueprogramm",
             },
             {
               rank: 8,
-
               setiings: "96.00%  1 - 3 Tage  4.900+",
               bonus: "500€*",
               rating: "4.6/5",
-              image: LuckyImgae,
+              image: "/lucky.png",
               tag: "Exklusivangebot",
             },
           ].map((casino) => (
@@ -119,7 +107,7 @@ export default function Home() {
                 </div>
 
                 <div className="bg-blue-50 gap-4 p-4 rounded-lg flex items-center w-full sm:w-[280px] h-[100px]">
-                <Image
+                  <Image
                     src={casino.image}
                     alt={casino.tag}
                     width={80}
