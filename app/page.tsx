@@ -11,6 +11,7 @@ type Casino = {
   payout: string;
   textbuton: string;
   buttonText: string;
+  LinkButton: string;
 };
 
 const casinos: Casino[] = [
@@ -19,8 +20,11 @@ const casinos: Casino[] = [
     name: "1. Jokerstar",
     imageAlt: "/jokimage.jpeg",
     bonus: "200 % bis zu 100 € + 200 Free Spins",
-    details: "Auszahlungsquote: 94 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+    details:
+      "Auszahlungsquote: 94 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
     payout: "",
+    LinkButton:
+      "https://m.jokerstar.de/Redirect.aspx?mid=179&sid=923&cid=&pid=&affid=268",
     textbuton: "Sichere dir jetzt denien Bonus",
     buttonText: "JETZT SPIELEN",
   },
@@ -29,8 +33,11 @@ const casinos: Casino[] = [
     name: "2. Betano",
     imageAlt: "/betr.jpeg",
     bonus: "100 % bis zu 100 € + 20 € Freiwette",
-    details: "Auszahlungsquote: 92,1 bis 95 %\nBeliebte Zahlungsdienste akzeptiert",
+    details:
+      "Auszahlungsquote: 92,1 bis 95 %\nBeliebte Zahlungsdienste akzeptiert",
     payout: "",
+    LinkButton:
+      "https://www.pfxtracking.com/offer/load?o=279305E7D4774AB5899839DB54FD739B",
     textbuton: "Sichere dir jetzt denien Bonus",
     buttonText: "JETZT SPIELEN",
   },
@@ -39,8 +46,10 @@ const casinos: Casino[] = [
     name: "3. Löwen Play",
     imageAlt: "/lown.jpeg",
     bonus: "100 % bis zu 100 € + 150 Free Spins",
-    details: "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+    details:
+      "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
     payout: "",
+    LinkButton: "https://anr.loewen-play.de/redirect.aspx?pid=3662&bid=1581",
     textbuton: "Sichere dir jetzt denien Bonus",
     buttonText: "JETZT SPIELEN",
   },
@@ -49,8 +58,11 @@ const casinos: Casino[] = [
     name: "4. BingBong",
     imageAlt: "/bingbow.jpeg",
     bonus: "100 % bis zu 100 € + 50 Free Spins (Book of Ra Deluxe)",
-    details: "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+    details:
+      "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
     payout: "",
+    LinkButton:
+      "https://www.bingbong.de/?iclid=1-22c00907-7280-367a-807a-a680720709c0-a89905",
     textbuton: "Sichere dir jetzt denien Bonus",
     buttonText: "JETZT SPIELEN",
   },
@@ -59,8 +71,11 @@ const casinos: Casino[] = [
     name: "5. Jackpot Piraten",
     imageAlt: "/jack.jpeg",
     bonus: "100 % bis zu 100 € + 50 Free Spins",
-    details: "Auszahlungsquote: 92,7 % – 97,54 %\nBeliebte Zahlungsdienste akzeptiert",
+    details:
+      "Auszahlungsquote: 92,7 % – 97,54 %\nBeliebte Zahlungsdienste akzeptiert",
     payout: "",
+    LinkButton:
+      "https://www.jackpotpiraten.de/?iclid=1-22c00907-9a95-3163-8063-e1959a0709c0-a89599",
     textbuton: "Sichere dir jetzt denien Bonus",
     buttonText: "JETZT SPIELEN",
   },
@@ -80,31 +95,44 @@ export default function Home() {
           {casinos.map((casino) => (
             <div
               key={casino.id}
-              className="bg-white shadow-md p-4 rounded-lg flex flex-col md:flex-row items-center w-max-7xl justify-between"
+              className="bg-white shadow-md p-4 rounded-lg flex flex-col md:flex-row items-center w-ma justify-between"
             >
               <div className="flex flex-col items-center gap-4 w-full md:w-auto">
-              <span className="text-xl font-bold">{casino.name}</span>
+                <span className="text-xl font-bold">{casino.name}</span>
                 <div className="w-20 h-20 relative">
-                  <Image src={casino.imageAlt} alt="image icon" width={70} height={70} className="rounded-md" />
+                  <Image
+                    src={casino.imageAlt}
+                    alt="image icon"
+                    width={70}
+                    height={70}
+                    className="rounded-md"
+                  />
                 </div>
               </div>
               <div className="flex gap-2 itmes-center mt-4 md:mt-0 md:px-6 text-center md:text-left">
-                <p className="font-bold text-sm text-yellow-600 text-center">{casino.bonus}</p>
-                <p className="text-sm text-gray-600 text-center whitespace-pre-line  solid border-l-black">{casino.details}</p>
+                <p className="font-bold text-sm text-yellow-600 text-center">
+                  {casino.bonus}
+                </p>
+                <p className="text-sm text-gray-600 text-center whitespace-pre-line  solid border-l-black">
+                  {casino.details}
+                </p>
               </div>
               <div className="flex flex-col gap-3 text-center">
-              <h4 className="text-black text-base text-bold">
+                <h4 className="text-black text-base text-bold">
                   {casino.textbuton}
                 </h4>
-                <button className="bg-orange-700 hover:bg-orange-800 text-white font-bold py-2 px-2">
+                <a
+                  href={casino.LinkButton}
+                  className="bg-orange-700 hover:bg-orange-800 text-white font-bold py-2 px-2"
+                >
                   {casino.buttonText}
-                </button>
-              
+                </a>
               </div>
             </div>
           ))}
           <p className="text-sm text-center text-gray-600 mt-4">
-            Angebot gilt nur für neue Spieler. Verfügbar für Personen ab 18 Jahren.
+            Angebot gilt nur für neue Spieler. Verfügbar für Personen ab 18
+            Jahren.
           </p>
         </div>
 
@@ -112,7 +140,9 @@ export default function Home() {
         <aside className="w-full lg:w-[300px] flex-shrink-0 lg:sticky lg:top-6 h-fit">
           {/* Popular Games */}
           <div className="bg-white rounded-md shadow p-4 mb-4">
-            <h2 className="text-md font-semibold mb-2">Beliebteste Casino Spiele</h2>
+            <h2 className="text-md font-semibold mb-2">
+              Beliebteste Casino Spiele
+            </h2>
             <ul className="text-sm space-y-1">
               <li>🎰 Spielautomaten</li>
               <li>🎲 Roulette</li>
@@ -133,7 +163,8 @@ export default function Home() {
           {/* Top Casinos List */}
           <div className="bg-white rounded-md shadow p-4 mb-4">
             <h2 className="text-md font-semibold mb-2">
-              Beste Online Casinos <span className="text-orange-500">Apr. 2025</span>
+              Beste Online Casinos{" "}
+              <span className="text-orange-500">Apr. 2025</span>
             </h2>
             <ol className="text-sm space-y-1 list-decimal list-inside">
               <li>JINSPI</li>
