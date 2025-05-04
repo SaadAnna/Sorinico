@@ -1,152 +1,118 @@
-// app/page.tsx
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Star } from "lucide-react";
+
+type Casino = {
+  id: number;
+  name: string;
+  imageAlt: string;
+  bonus: string;
+  details: string;
+  payout: string;
+  textbuton: string;
+  buttonText: string;
+};
+
+const casinos: Casino[] = [
+  {
+    id: 1,
+    name: "1. Jokerstar",
+    imageAlt: "/jokimage.jpeg",
+    bonus: "200 % bis zu 100 € + 200 Free Spins",
+    details: "Auszahlungsquote: 94 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+    payout: "",
+    textbuton: "Sichere dir jetzt denien Bonus",
+    buttonText: "JETZT SPIELEN",
+  },
+  {
+    id: 2,
+    name: "2. Betano",
+    imageAlt: "/betr.jpeg",
+    bonus: "100 % bis zu 100 € + 20 € Freiwette",
+    details: "Auszahlungsquote: 92,1 bis 95 %\nBeliebte Zahlungsdienste akzeptiert",
+    payout: "",
+    textbuton: "Sichere dir jetzt denien Bonus",
+    buttonText: "JETZT SPIELEN",
+  },
+  {
+    id: 3,
+    name: "3. Löwen Play",
+    imageAlt: "/lown.jpeg",
+    bonus: "100 % bis zu 100 € + 150 Free Spins",
+    details: "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+    payout: "",
+    textbuton: "Sichere dir jetzt denien Bonus",
+    buttonText: "JETZT SPIELEN",
+  },
+  {
+    id: 4,
+    name: "4. BingBong",
+    imageAlt: "/bingbow.jpeg",
+    bonus: "100 % bis zu 100 € + 50 Free Spins (Book of Ra Deluxe)",
+    details: "Auszahlungsquote: 93 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
+    payout: "",
+    textbuton: "Sichere dir jetzt denien Bonus",
+    buttonText: "JETZT SPIELEN",
+  },
+  {
+    id: 5,
+    name: "5. Jackpot Piraten",
+    imageAlt: "/jack.jpeg",
+    bonus: "100 % bis zu 100 € + 50 Free Spins",
+    details: "Auszahlungsquote: 92,7 % – 97,54 %\nBeliebte Zahlungsdienste akzeptiert",
+    payout: "",
+    textbuton: "Sichere dir jetzt denien Bonus",
+    buttonText: "JETZT SPIELEN",
+  },
+];
 
 export default function Home() {
   return (
-    <main className="bg-gray-100 p-6 text-gray-900">
-      {/* Header */}
-      <section className="max-w-7xl mx-auto mb-8">
-        <h1 className="text-3xl font-bold mb-2">
-          Beste Online Casinos in Deutschland 2025
-        </h1>
-        <p className="text-sm text-gray-700">
-          Diese Top 50 enthält ausschließlich staatlich lizenzierte Online
-          Spielbanken, deren Webseiten und Kundendienste selbstverständlich für
-          deutschsprachige Kunden geeignet sind. Lest bitte meine Testberichte,
-          wenn ihr mehr Informationen für eure Entscheidung benötigt.
-        </p>
-      </section>
+    <section className="bg-gray-100 py-10 px-4 md:px-12 max-w-7xl mx-auto">
+      <h2 className="text-2xl font-bold mb-6 ">
+        Unsere Empfehlungen basierend auf Bonusangeboten im April 2025:
+      </h2>
 
-      {/* Main Content */}
-      <section className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
-        {/* Casino List */}
-        <div className="flex-1">
-          <div className="bg-blue-100 p-7 flex-row rounded-md font-semibold mb-4 flex gap-2 justify-center">
-            <Image className="w-8 h-5" alt="Germany Flag" src="/germanyflag.png" width={32} height={20} />
-            🇩🇪 Beste deutsche Casinoseiten 2025
-          </div>
-
-          {/* Casino Cards */}
-          {[
-            {
-              rank: 1,
-              setiings: "96.00%  1 - 5 Tage  7.500+",
-              bonus: "800€*",
-              rating: "5/5",
-              image: "/Hit.png",
-              tag: "Regelmäßige Turniere",
-            },
-            {
-              rank: 2,
-              setiings: "96.00%  1 - 5 Tage  8.400+",
-              bonus: "500€*",
-              rating: "4.9/5",
-              image: "/king.png",
-              tag: "Top Spielauswahl",
-            },
-            {
-              rank: 3,
-              setiings: "96.00%  1 - 5 Tage  5.000+",
-              bonus: "1.500€*",
-              rating: "4.8/5",
-              image: "/revolu.png",
-              tag: "Exklusiver 150% Bonus",
-            },
-            {
-              rank: 4,
-              setiings: "98.00%  1 - 5 Tage  10.000+",
-              bonus: "2.000€*",
-              rating: "4.8/5",
-              image: "/casani.png",
-              tag: "Top Spielauswahl",
-            },
-            {
-              rank: 5,
-              setiings: "96.00%  1 - 5 Tage  7.900+",
-              bonus: "1.000€*",
-              rating: "4.7/5",
-              image: "/seot.png",
-              tag: "Attraktive Aktionen",
-            },
-            {
-              rank: 6,
-              setiings: "96.00%  1 - 5 Tage  12.000+",
-              bonus: "500€*",
-              rating: "4.7/5",
-              image: "/punter.png",
-              tag: "Mehr als 12.000 Spiele aller Art",
-            },
-            {
-              rank: 7,
-              setiings: "97.00%  1 - 4 Tage  3.100+",
-              bonus: "1.000€*",
-              rating: "4.6/5",
-              image: "/vulk.png",
-              tag: "Top Treueprogramm",
-            },
-            {
-              rank: 8,
-              setiings: "96.00%  1 - 3 Tage  4.900+",
-              bonus: "500€*",
-              rating: "4.6/5",
-              image: "/lucky.png",
-              tag: "Exklusivangebot",
-            },
-          ].map((casino) => (
+      {/* FLEX WRAPPER */}
+      <div className="flex flex-col lg:flex-row gap-6">
+        {/* MAIN CONTENT */}
+        <div className="flex-1 space-y-6">
+          {casinos.map((casino) => (
             <div
-              key={casino.rank}
-              className="flex flex-col sm:flex-row w-full items-start sm:items-center justify-between rounded-xl border bg-white p-4 shadow-md mb-4 gap-4"
+              key={casino.id}
+              className="bg-white shadow-md p-4 rounded-lg flex flex-col md:flex-row items-center w-max-7xl justify-between"
             >
-              {/* Left section */}
-              <div className="flex items-center gap-4">
-                <div className="text-lg font-bold rounded-full py-10 px-4 bg-blue-200">
-                  {casino.rank}
-                </div>
-
-                <div className="bg-blue-50 gap-4 p-4 rounded-lg flex items-center w-full sm:w-[280px] h-[100px]">
-                  <Image
-                    src={casino.image}
-                    alt={casino.tag}
-                    width={80}
-                    height={80}
-                    className="rounded object-contain"
-                  />
-                  <div className="text-2xl font-bold">{casino.bonus}</div>
+              <div className="flex flex-col items-center gap-4 w-full md:w-auto">
+              <span className="text-xl font-bold">{casino.name}</span>
+                <div className="w-20 h-20 relative">
+                  <Image src={casino.imageAlt} alt="image icon" width={70} height={70} className="rounded-md" />
                 </div>
               </div>
-
-              {/* Right section */}
-              <div className="flex flex-col gap-1 text-sm text-right">
-                <div className="text-xs flex items-center justify-end gap-1 text-gray-600">
-                  <Star className="w-3 h-3 text-yellow-400" />
-                  {casino.rating}
-                </div>
-                <div className="font-semibold text-green-700">{casino.tag}</div>
-                <div className="text-gray-800">{casino.setiings}</div>
-
-                <div className="flex justify-end gap-3 mt-2">
-                  <button className="bg-gradient-to-r cursor-pointer from-orange-500 to-red-500 text-white px-4 py-2 rounded-md text-sm font-semibold shadow">
-                    Jetzt Spielen
-                  </button>
-                  <button className="text-blue-500 cursor-pointer text-sm hover:underline">
-                    Zum Testbericht
-                  </button>
-                </div>
+              <div className="flex gap-2 itmes-center mt-4 md:mt-0 md:px-6 text-center md:text-left">
+                <p className="font-bold text-sm text-yellow-600 text-center">{casino.bonus}</p>
+                <p className="text-sm text-gray-600 text-center whitespace-pre-line  solid border-l-black">{casino.details}</p>
+              </div>
+              <div className="flex flex-col gap-3 text-center">
+              <h4 className="text-black text-base text-bold">
+                  {casino.textbuton}
+                </h4>
+                <button className="bg-orange-700 hover:bg-orange-800 text-white font-bold py-2 px-2">
+                  {casino.buttonText}
+                </button>
+              
               </div>
             </div>
           ))}
+          <p className="text-sm text-center text-gray-600 mt-4">
+            Angebot gilt nur für neue Spieler. Verfügbar für Personen ab 18 Jahren.
+          </p>
         </div>
 
-        {/* Sidebar */}
+        {/* SIDEBAR */}
         <aside className="w-full lg:w-[300px] flex-shrink-0 lg:sticky lg:top-6 h-fit">
           {/* Popular Games */}
           <div className="bg-white rounded-md shadow p-4 mb-4">
-            <h2 className="text-md font-semibold mb-2">
-              Beliebteste Casino Spiele
-            </h2>
+            <h2 className="text-md font-semibold mb-2">Beliebteste Casino Spiele</h2>
             <ul className="text-sm space-y-1">
               <li>🎰 Spielautomaten</li>
               <li>🎲 Roulette</li>
@@ -167,8 +133,7 @@ export default function Home() {
           {/* Top Casinos List */}
           <div className="bg-white rounded-md shadow p-4 mb-4">
             <h2 className="text-md font-semibold mb-2">
-              Beste Online Casinos{" "}
-              <span className="text-orange-500">Apr. 2025</span>
+              Beste Online Casinos <span className="text-orange-500">Apr. 2025</span>
             </h2>
             <ol className="text-sm space-y-1 list-decimal list-inside">
               <li>JINSPI</li>
@@ -198,7 +163,7 @@ export default function Home() {
             ZUM SEITENANFANG
           </button>
         </aside>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }
