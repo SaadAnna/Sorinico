@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, ChevronDown, Info, Shield } from 'lucide-react';
+import HeaderIcon from "@/public/headericon.jpeg";
+import Image from 'next/image';
 
 export default function CasinoHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,25 +39,13 @@ export default function CasinoHeader() {
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="mr-2">
-              <div className="w-10 h-10 relative">
-                <div className="absolute inset-0 bg-black rounded-full border-2 border-red-600"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-6 h-4 bg-yellow-400"></div>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-6 h-1 mt-1 bg-red-600"></div>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-6 h-1 mt-3 bg-black"></div>
-                </div>
-              </div>
-            </div>
+           
+            <Image className='object-cover rounded-full' src={HeaderIcon} alt="web icon" width={7} height={7} />
             <div>
               <span className="font-bold text-xl">
-                <span className="text-black">Casinos</span>
-                <span className="text-red-600">Deutschland</span>
-                <span className="text-gray-500 font-normal">.com</span>
+                <span className="text-black">Lucky</span>
+                <span className="text-red-600">Charms</span>
+                <span className="text-gray-500 font-normal">Gambling</span>
               </span>
             </div>
           </div>
