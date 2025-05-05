@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Navigate from "./DeutschlandCom "
+import CasinoHeader from "./CasinoHeader";
 type Casino = {
   id: number;
   name: string;
@@ -85,7 +85,7 @@ export default function Home() {
   return (
     
       <div>
-      <Navigate />
+      <CasinoHeader />
     <section className="bg-gray-100 py-10 px-4 md:px-12 max-w-7xl mx-auto">
       <h2 className="text-2xl font-bold mb-6 ">
         Unsere Empfehlungen basierend auf Bonusangeboten im April 2025:
