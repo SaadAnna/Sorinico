@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Globe, ChevronDown } from 'lucide-react';
+import FooterIcon from "@/public/fottericon.jpeg";
 
 export default function CasinoFooter() {
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
@@ -48,7 +49,7 @@ export default function CasinoFooter() {
               <Globe className="w-4 h-4 sm:w-6 sm:h-6" />
             </div>
             <div className="flex items-center mt-4 w-4 h-4 sm:mt-6">
-                <img src="/fottericon.png" alt="GGL Logo" className="mr-4" />
+                <Image src={FooterIcon} alt="GGL Logo" className="mr-4" width={10} height={10} />
               </div>
           </div>
           

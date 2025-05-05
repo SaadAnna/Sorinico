@@ -38,14 +38,12 @@ export default function CasinoHeader() {
       <nav className="bg-white py-4 px-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center gap-2">
            
-            <Image className='object-cover rounded-full' src={HeaderIcon} alt="web icon" width={7} height={7} />
+            <Image className='object-contain rounded-xl' src={HeaderIcon} alt="web icon" width={7} height={7} />
             <div>
               <span className="font-bold text-xl">
-                <span className="text-black">Lucky</span>
-                <span className="text-red-600">Charms</span>
-                <span className="text-gray-500 font-normal">Gambling</span>
+                <span className="text-black">Lucky Charms Gambling</span>
               </span>
             </div>
           </div>
