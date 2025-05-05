@@ -1,11 +1,12 @@
 import React from 'react';
-
+import IconWeb from "@/public/iconprincip.png";
+import Image from 'next/image';
 const DeutschlandCom = () => {
   return (
-    <div className="max-w-4xl mx-auto p-6 font-sans">
+    <div className="max-w-7xl mx-auto lg:flex items-center gap-10">
       {/* Header */}
       <header className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-800">Deutschland.com</h1>
+        <Image src={IconWeb} alt='Website Icon' width={50} height={50} />
       </header>
 
       {/* Casino Section */}
@@ -14,10 +15,10 @@ const DeutschlandCom = () => {
         
         {/* Navigation Links */}
         <nav className="flex flex-wrap gap-4 md:gap-6">
-          <a href="#" className="text-blue-600 hover:text-blue-800 font-medium">Bonus</a>
-          <a href="#" className="text-blue-600 hover:text-blue-800 font-medium">Spiele</a>
-          <a href="#" className="text-blue-600 hover:text-blue-800 font-medium">Zahlungsmethoden</a>
-          <a href="#" className="text-blue-600 hover:text-blue-800 font-medium">News</a>
+          <a href="#" className="text-black font-semibold text-lg">Bonus</a>
+          <a href="#" className="text-black font-semibold text-lg">Spiele</a>
+          <a href="#" className="text-black font-semibold text-lg">Zahlungsmethoden</a>
+          <a href="#" className="text-black font-semibold text-lg">News</a>
         </nav>
       </section>
     </div>
