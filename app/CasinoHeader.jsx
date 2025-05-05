@@ -40,7 +40,7 @@ export default function CasinoHeader() {
           {/* Logo */}
           <div className="flex items-center gap-2">
            
-            <Image className='object-contain rounded-xl' src={HeaderIcon} alt="web icon" width={7} height={7} />
+            <Image className='object-contain rounded-2xl' src={HeaderIcon} alt="web icon" width={40} height={7} />
             <div>
               <span className="font-bold text-xl">
                 <span className="text-black">Lucky Charms Gambling</span>

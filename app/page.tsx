@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import CasinoHeader from "./CasinoHeader";
+import CasinoFooter from "./CasinoFooter";
 type Casino = {
   id: number;
   name: string;
@@ -199,6 +200,7 @@ export default function Home() {
         </aside>
       </div>
     </section>
+    <CasinoFooter />
     </div>
   );
 }
