@@ -19,7 +19,7 @@ const casinos: Casino[] = [
   {
     id: 1,
     name: "1. Jokerstar",
-    imageAlt: "/jokimage.jpeg",
+    imageAlt: "/jokistart.jpeg",
     bonus: "200 % bis zu 100 € + 200 Free Spins",
     details:
       "Auszahlungsquote: 94 bis 97 %\nBeliebte Zahlungsdienste akzeptiert",
@@ -32,7 +32,7 @@ const casinos: Casino[] = [
   {
     id: 2,
     name: "2. Betano",
-    imageAlt: "/betr.jpeg",
+    imageAlt: "/betano.jpeg",
     bonus: "100 % bis zu 100 € + 20 € Freiwette",
     details:
       "Auszahlungsquote: 92,1 bis 95 %\nBeliebte Zahlungsdienste akzeptiert",
@@ -101,17 +101,16 @@ export default function Home() {
               key={casino.id}
               className="bg-white dark:bg-gray-700 shadow-md p-4 rounded-lg flex flex-col md:flex-row items-center w-ma justify-between"
             >
-              <div className="flex flex-col items-center gap-4 w-full md:w-auto">
-                <span className="text-xl font-bold">{casino.name}</span>
-                <div className="w-32 h-32 relative">
+              <div className="flex flex-col text-start gap-3">
+                <span className="text-lg whitespace-nowrap font-bold">{casino.name}</span>
                   <Image
                     src={casino.imageAlt}
                     alt="image icon"
                     width={96}
                     height={96}
-                    className="rounded-md "
+                    className="rounded-md justify-start "
                   />
-                </div>
+               
               </div>
               <div className="flex gap-2 itmes-center mt-4 md:mt-0 md:px-6 text-center md:text-left">
                 <p className="font-bold text-sm text-yellow-600 text-center">
