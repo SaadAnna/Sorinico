@@ -101,17 +101,19 @@ export default function Home() {
               key={casino.id}
               className="bg-white dark:bg-gray-700 shadow-md p-4 rounded-lg flex flex-col md:flex-row items-center w-ma justify-between"
             >
-              <div className="flex flex-col text-start gap-3">
-                <span className="text-lg whitespace-nowrap font-bold">{casino.name}</span>
-                  <Image
-                    src={casino.imageAlt}
-                    alt="image icon"
-                    width={96}
-                    height={96}
-                    className="rounded-md justify-start "
-                  />
-               
-              </div>
+              <div className="flex flex-col items-center lg:items-start text-start gap-3">
+  <span className="text-lg whitespace-nowrap font-bold">
+    {casino.name}
+  </span>
+  <Image
+    src={casino.imageAlt}
+    alt="image icon"
+    width={96}
+    height={96}
+    className="rounded-md"
+  />
+</div>
+
               <div className="flex gap-2 itmes-center mt-4 md:mt-0 md:px-6 text-center md:text-left">
                 <p className="font-bold text-sm text-yellow-600 text-center">
                   {casino.bonus}
