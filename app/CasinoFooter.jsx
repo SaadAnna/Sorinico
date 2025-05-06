@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Globe, ChevronDown } from 'lucide-react';
-import FooterIcon from "@/public/fottericon.jpeg";
-
+import FooterIcon from "@/public/fottericon.png";
+import Image from 'next/image';
 export default function CasinoFooter() {
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   
@@ -15,22 +15,22 @@ export default function CasinoFooter() {
       <div className="bg-gray-700 py-4">
         <div className="container mx-auto px-4">
           <nav className="flex flex-wrap justify-center md:justify-start gap-2 md:gap-4 lg:gap-8">
-            <a href="#" className="hover:text-gary-200 text-white text-lg px-2 py-1">Impressum & Kontakt</a>
-            <a href="#" className="hover:text-gary-200 text-white text-lg px-2 py-1">Über uns</a>
-            <a href="#" className="hover:text-gary-200 text-white text-lg px-2 py-1">Wie wir bewerten</a>
-            <a href="#" className="hover:text-gary-200 text-white text-lg px-2 py-1">Karriere</a>
-            <a href="#" className="hover:text-gary-200 text-white text-lg px-2 py-1">AGB</a>
-            <a href="#" className="hover:text-gary-200 text-white text-lg px-2 py-1">Datenschutz</a>
-            <a href="#" className="hover:text-gary-200 text-white text-lg px-2 py-1">Verantwortungsvolles Spielen</a>
+            <a href="#" className="hover:text-gary-200 text-white text-base ">Impressum & Kontakt</a>
+            <a href="#" className="hover:text-gary-200 text-white text-base ">Über uns</a>
+            <a href="#" className="hover:text-gary-200 text-white text-base ">Wie wir bewerten</a>
+            <a href="#" className="hover:text-gary-200 text-white text-base ">Karriere</a>
+            <a href="#" className="hover:text-gary-200 text-white text-base ">AGB</a>
+            <a href="#" className="hover:text-gary-200 text-white text-base ">Datenschutz</a>
+            <a href="#" className="hover:text-gary-200 text-white text-base ">Verantwortungsvolles Spielen</a>
           </nav>
         </div>
       </div>
 
       {/* Responsible gambling section */}
-      <div className="bg-blue-950 py-6 md:py-8 px-4 text-center relative overflow-hidden rounded-2xl">
+      <div className="bg-blue-950 py-6 md:py-8 px-4 text-center relative overflow-hidden">
         {/* Phone icon watermark */}
         <div className="absolute left-0 top-0 opacity-10 w-full h-full flex items-center justify-center pointer-events-none">
-          <Phone className="w-40 sm:w-64 h-40 sm:h-64" />
+          <Phone className="w-32 sm:w-52 h-32 sm:h-52" />
         </div>
         
         <div className="container mx-auto max-w-4xl relative z-10">
@@ -41,15 +41,15 @@ export default function CasinoFooter() {
             <a href="https://www.buwei.de/" className="text-neutral-500 ml-1 hover:underline">https://www.buwei.de/</a>
           </p>
           
-          <div className="flex justify-center gap-3 sm:gap-6 mb-4 sm:mb-6">
+          <div className="flex justify-center items-center gap-3 sm:gap-6 mb-4 sm:mb-6">
             <div className="w-8 h-8 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm sm:text-lg">18+</span>
+              <span className="text-gray-400 font-bold text-sm sm:text-lg">18+</span>
             </div>
-            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-              <Globe className="w-4 h-4 sm:w-6 sm:h-6" />
+            <div className="w-8 h-8 sm:w-12 sm:h-12 bg-white  rounded-full flex items-center justify-center">
+              <Globe className="w-4 h-4 sm:w-6 sm:h-6 text-gray-400" />
             </div>
-            <div className="flex items-center mt-4 w-4 h-4 sm:mt-6">
-                <Image src={FooterIcon} alt="GGL Logo" className="mr-4" width={10} height={10} />
+            <div className="flex items-center  w-20 h-20">
+                <Image src={FooterIcon} alt="GGL Logo" className="mr-4" width={96} height={96} />
               </div>
           </div>
           
@@ -66,7 +66,7 @@ export default function CasinoFooter() {
       </div>
 
       {/* Legal information section */}
-      <div className="bg-gray-100 py-6 sm:py-8 px-4 text-gray-700">
+      <div className="bg-gray-200 py-6 sm:py-8 px-4 text-gray-700">
         <div className="container mx-auto grid md:grid-cols-2 gap-6 md:gap-8">
           <div className="order-2 md:order-1">
             <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 text-gray-800 text-bold">Glücksspielllizenzen und rechtliche Hinweise:</h3>
@@ -75,7 +75,7 @@ export default function CasinoFooter() {
                 Amtliche Liste der Veranstalter und Vermittler von Glücksspielen, die über eine Erlaubnis oder Konzession nach dem Glücksspielstaatsvertrag 2021 verfügen - 
                 <a href="https://www.gluecksspiel-behoerde.de" className="text-blue-600 hover:underline block sm:inline-block sm:ml-1">https://www.gluecksspiel-behoerde.de</a>
               </p>
-              <div className="flex items-center mt-4 w-4 h-4 sm:mt-6">
+              <div className="flex items-center mt-4 w-40 h-40 sm:mt-6">
                 <img src="/fottericon.png" alt="GGL Logo" className="mr-4" />
               </div>
             </div>
@@ -100,18 +100,9 @@ export default function CasinoFooter() {
       {/* Social links in header */}
       <div className="bg-gray-700 py-4">
         <div className="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
-          <div className="flex items-center mb-4 sm:mb-0">
-            <div className="mr-2">
-              <span className="text-orange-500 text-2xl">🇩🇪</span>
-            </div>
-            <div>
-              <span className="font-bold text-base sm:text-xl">
-                <span className="text-gray-300">ONLINE</span>
-                <span className="text-white">CASINOS</span>
-                <span className="text-white">Deutschland</span>
-                <span className="text-gray-400 font-normal">.com</span>
-              </span>
-            </div>
+          <div className="flex text-white text-2xl text-bold">
+         Lucky Charms Gambling
+
           </div>
           
           <div className="flex items-center">
