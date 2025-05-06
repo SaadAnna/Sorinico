@@ -103,13 +103,13 @@ export default function Home() {
             >
               <div className="flex flex-col items-center gap-4 w-full md:w-auto">
                 <span className="text-xl font-bold">{casino.name}</span>
-                <div className="w-20 h-20 relative">
+                <div className="w-32 h-32 relative">
                   <Image
                     src={casino.imageAlt}
                     alt="image icon"
-                    width={70}
-                    height={70}
-                    className="rounded-md"
+                    width={96}
+                    height={96}
+                    className="rounded-md "
                   />
                 </div>
               </div>
