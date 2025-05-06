@@ -66,10 +66,10 @@ export default function CasinoFooter() {
       </div>
 
       {/* Legal information section */}
-      <div className="bg-gray-200 py-6 sm:py-8 px-4 text-gray-700">
+      <div className="bg-gray-200 dark:bg-gray-600 py-6 sm:py-8 px-4 text-gray-700 dark:text-gray-200">
         <div className="container mx-auto grid md:grid-cols-2 gap-6 md:gap-8">
           <div className="order-2 md:order-1">
-            <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 text-gray-800 text-bold">Glücksspielllizenzen und rechtliche Hinweise:</h3>
+            <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 text-gray-800 dark:text-white text-bold">Glücksspielllizenzen und rechtliche Hinweise:</h3>
             <div className="text-xs sm:text-sm">
               <p className="mb-3">
                 Amtliche Liste der Veranstalter und Vermittler von Glücksspielen, die über eine Erlaubnis oder Konzession nach dem Glücksspielstaatsvertrag 2021 verfügen - 
@@ -82,7 +82,7 @@ export default function CasinoFooter() {
           </div>
           
           <div className="order-1 md:order-2">
-            <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 text-bold text-gray-800">Allgemeine Geschäftsbedingungen & Promotionen</h3>
+            <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 text-bold text-gray-800 dark:text-white">Allgemeine Geschäftsbedingungen & Promotionen</h3>
             <p className="text-xs sm:text-sm">
               Alle hier gelisteten Gratisangebote, Aktionen und Boni unterliegen bestimmten Bedingungen und Umsatzanforderungen
               des jeweiligen Anbieters. In den meisten Fällen sind nur Neukunden zum Erhalt von Angeboten, Aktionen und Boni

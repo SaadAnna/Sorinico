@@ -144,54 +144,54 @@ export default function Home() {
         {/* SIDEBAR */}
         <aside className="w-full lg:w-[300px] flex-shrink-0 lg:sticky lg:top-6 h-fit">
           {/* Popular Games */}
-          <div className="bg-white rounded-md shadow p-4 mb-4">
-            <h2 className="text-md font-semibold mb-2 dark:text-black">
+          <div className="bg-white dark:bg-gray-600 rounded-md shadow p-4 mb-4">
+            <h2 className="text-md font-semibold mb-2 text-black dark:text-white">
               Beliebteste Casino Spiele
             </h2>
             <ul className="text-sm space-y-1">
-              <li className=" dark:text-black">🎰 Spielautomaten</li>
-              <li className=" dark:text-black">🎲 Roulette</li>
-              <li className=" dark:text-black">🃏 Blackjack</li>
+              <li className=" text-black dark:text-white">🎰 Spielautomaten</li>
+              <li className=" text-black dark:text-white">🎲 Roulette</li>
+              <li className=" text-black dark:text-white">🃏 Blackjack</li>
               <li className="text-blue-600 underline">Weitere Spiele</li>
             </ul>
           </div>
 
           {/* Help & Info */}
-          <div className="bg-white rounded-md shadow p-4 mb-4">
-            <h2 className="text-md font-semibold mb-2 dark:text-black">Hilfe & Infos</h2>
+          <div className="bg-white dark:bg-gray-600 rounded-md shadow p-4 mb-4">
+            <h2 className="text-md font-semibold mb-2 text-black dark:text-white">Hilfe & Infos</h2>
             <ul className="text-sm space-y-1">
-              <li className="dark:text-black">📘 Online Casino Ratgeber</li>
-              <li className="dark:text-black">ℹ️ Infos zu Online Casinos & GlüStV</li>
+              <li className="text-black dark:text-white">📘 Online Casino Ratgeber</li>
+              <li className="text-black dark:text-white">ℹ️ Infos zu Online Casinos & GlüStV</li>
             </ul>
           </div>
 
           {/* Top Casinos List */}
-          <div className="bg-white rounded-md shadow p-4 mb-4">
-            <h2 className="text-md font-semibold mb-2 dark:text-black">
+          <div className="bg-white dark:bg-gray-600 rounded-md shadow p-4 mb-4">
+            <h2 className="text-md font-semibold mb-2 text-black dark:text-white">
               Beste Online Casinos{" "}
               <span className="text-orange-500">Apr. 2025</span>
             </h2>
             <ol className="text-sm space-y-1 list-decimal list-inside">
-              <li className="dark:text-black">JINSPI</li>
-              <li className="dark:text-black">Kingmaker</li>
-              <li className="dark:text-black">REVOLUTION CASINO</li>
-              <li className="dark:text-black">CASINOVA</li>
-              <li className="dark:text-black">Slotsville</li>
-              <li className="dark:text-black">SPUNTER</li>
-              <li className="dark:text-black">VULKAN</li>
-              <li className="dark:text-black">LUCKY DREAMS</li>
-              <li className="dark:text-black">FRUITY</li>
-              <li className="dark:text-black">GOLDEN CLUB</li>
+              <li className="text-black dark:text-white">JINSPI</li>
+              <li className="text-black dark:text-white">Kingmaker</li>
+              <li className="text-black dark:text-white">REVOLUTION CASINO</li>
+              <li className="text-black dark:text-white">CASINOVA</li>
+              <li className="text-black dark:text-white">Slotsville</li>
+              <li className="text-black dark:text-white">SPUNTER</li>
+              <li className="text-black dark:text-white">VULKAN</li>
+              <li className="text-black dark:text-white">LUCKY DREAMS</li>
+              <li className="text-black dark:text-white">FRUITY</li>
+              <li className="text-black dark:text-white">GOLDEN CLUB</li>
             </ol>
           </div>
 
           {/* New Casinos */}
-          <div className="bg-white rounded-md shadow p-4 mb-4">
-            <h2 className="text-md font-semibold mb-2 dark:text-black">Neue Online Casinos</h2>
+          <div className="bg-white dark:bg-gray-600 rounded-md shadow p-4 mb-4">
+            <h2 className="text-md font-semibold mb-2 text-black dark:text-white">Neue Online Casinos</h2>
             <ul className="text-sm space-y-1">
-              <li className="text-black">1. TRIVELABET – 1.000€*</li>
-              <li className="text-black">2. GGSET – 1.000€*</li>
-              <li className="text-black">3. GOLD CLUB – 500€*</li>
+              <li className="text-black dark:text-white">1. TRIVELABET – 1.000€*</li>
+              <li className="text-black dark:text-white">2. GGSET – 1.000€*</li>
+              <li className="text-black dark:text-white">3. GOLD CLUB – 500€*</li>
             </ul>
           </div>
 
