@@ -88,7 +88,7 @@ export default function CasinoFooter() {
               des jeweiligen Anbieters. In den meisten Fällen sind nur Neukunden zum Erhalt von Angeboten, Aktionen und Boni
               berechtigt. Alle Bonusangebote präsentieren den höchstmöglichen Betrag. Die tatsächliche Höhe hängt von der
               individuellen Einzahlungsgröße ab. Um den Maximalbetrag in Anspruch zu nehmen, erfordern manche Bonusangebote
-              mehrere Einzahlungen. Bitte überprüfen Sie die Webseite des jeweiligen Anbieters für dessen vollständige AGB.
+              mehrere Einzahlungen, Bitte überprüfen Sie die Webseite des jeweiligen Anbieters für dessen vollständige AGB.
             </p>
             <p className="text-xs sm:text-sm mt-2 sm:mt-3 uppercase">
               Onlinecasinosdeutschland.com bietet keinerlei Kundenbetreuung für jegliche Angebote oder Aktionen, die auf dieser Webseite erscheinen.
