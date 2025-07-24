@@ -72,7 +72,7 @@ export default function CasinoFooter() {
             <h3 className="text-base sm:text-lg font-bold mb-2 sm:mb-3 text-gray-800 dark:text-white text-bold">Glücksspielllizenzen und rechtliche Hinweise:</h3>
             <div className="text-xs sm:text-sm">
               <p className="mb-3">
-                Amtliche Liste, der Veranstalter und Vermittler von Glücksspielen, die über eine Erlaubnis oder Konzession nach dem Glücksspielstaatsvertrag 2021 verfügen - 
+                Amtliche Liste der Veranstalter und Vermittler von Glücksspielen, die über eine Erlaubnis oder Konzession nach dem Glücksspielstaatsvertrag 2021 verfügen - 
                 <a href="https://www.gluecksspiel-behoerde.de" className="text-blue-600 hover:underline block sm:inline-block sm:ml-1">https://www.gluecksspiel-behoerde.de</a>
               </p>
               <div className="flex items-center mt-4 w-40 h-40 sm:mt-6">
