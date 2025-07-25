@@ -79,7 +79,7 @@ export default function CasinoHeader() {
       <div className="bg-gray-900 dark:bg-gray-950 text-white flex justify-end items-center py-2 px-4 space-x-4">
         <div className="flex items-center">
           <Info size={16} className="mr-1" />
-          <span className="text-sm dark:text-white">Werbehinweise</span>
+          <span className="text-sm dark:text-white">Werbehinweise.</span>
         </div>
         <div className="flex items-center space-x-2">
           <div className="h-6 w-6 bg-gray-700 rounded flex items-center justify-center">
